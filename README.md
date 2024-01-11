@@ -1,3 +1,5 @@
+hyprland config for arch linux(or another linux)
+
 install wayland:
 xorg-xwayland
 qt5-wayland
