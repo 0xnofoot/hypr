@@ -6,8 +6,15 @@ qt5-wayland
 qt6-wayland
 glfw-wayland
 
-install xorg-xlsclients tool:
+install xorg tool:
 xorg-xlsclients
+xorg-xrdb
+
+install gtk3 tool:
+dconf
+dconf-editor
+you can run dconf-editor and change /ort/gnome/desktop/interface/text-scaling-factor 
+to change font factor scale for gtk3 app
 
 install hyprland:
 hyprland (AUR)
@@ -18,3 +25,5 @@ waybar-hyprland (AUR)
 rofi-libonn-wayland-only-git (AUR)
 tty-maple (AUR chinese font)
 mako
+
+
