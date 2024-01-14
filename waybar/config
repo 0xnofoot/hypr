@@ -1,0 +1,87 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "spacing": 0,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-right": ["cpu", "memory", "network", "battery", "pulseaudio", "clock", "wlr/taskbar"],
+    "modules-center": ["custom/launcher"],
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "active-only": true,
+        "on-click": "activate",
+        //"format": "{icon}",
+    },
+
+    "cpu": {
+        "interval": 3,
+        "format": " {usage}%",
+        "tooltip": false,
+    },
+
+    "memory": {
+        "interval": 3,
+        "tooltip": false,
+        "format": " {}%",
+    },
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": " ",
+        "format-ethernet": "",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip": false,
+        "format-linked": "{ifname} (No IP)  ",
+        "format-disconnected": "⚠ Disconnected ",
+    },
+
+    "battery": {
+        "interval": 1,
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20,
+        },
+        "format": "{icon} {capacity}%",
+        "tooltip": false,
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon}  {time}",
+        "format-icons": [" ", " ", " ", " ", " "]
+    },
+
+    "pulseaudio": {
+        "scroll-step": 1, // %, can be a float
+        "format": "{format_source}{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}% {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": "{format_source}",
+        //"format-source": " {volume}%",
+        "format-source-muted": " ",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [""]
+        },
+        "tooltip": false,
+    },
+
+    "clock": {
+        "tooltip": false,
+        "interval": 1,
+        "format": " {:%F %T}",
+    },
+
+    "custom/launcher":{
+        "format": " ",
+        "tooltip": false,
+    },
+}
+

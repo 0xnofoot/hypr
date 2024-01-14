@@ -1,5 +1,8 @@
 hyprland config for arch linux(or another linux)
 
+make a link for waybar:
+ln -s ~/.config/hypr/waybar ~/.config/waybar
+
 install wayland:
 xorg-xwayland
 qt5-wayland
