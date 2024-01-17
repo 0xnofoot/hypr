@@ -1,7 +1,8 @@
 hyprland config for arch linux(or another linux)
 
-make a link for waybar:
+make link:
 ln -s ~/.config/hypr/waybar ~/.config/waybar
+ln -s ~/.config/hypr/rofi ~/.config/rofi
 
 install wayland:
 xorg-xwayland
@@ -28,5 +29,9 @@ waybar-hyprland (AUR)
 rofi-libonn-wayland-only-git (AUR)
 tty-maple (AUR chinese font)
 mako
+
+networkmanager
+pavucontrol
+blueman
 
 
