@@ -8,6 +8,7 @@
     "gtk-layer-shell": true,
 
 	"modules-left": [
+						"custom/l_end", "custom/launcher", "custom/r_end",
 						"custom/l_end", "hyprland/workspaces", "custom/r_end"
 					],
 
@@ -22,6 +23,11 @@
 						"custom/l_end", "network",  "custom/r_end",
 						"custom/l_end", "pulseaudio",  "custom/r_end",
 					],
+
+    "custom/launcher":{
+        "format": "󰣇",
+        "tooltip": false,
+    },
 
 	"hyprland/workspaces": {
         "disable-scroll": true,
