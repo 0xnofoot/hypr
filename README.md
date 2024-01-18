@@ -3,6 +3,7 @@ hyprland config for arch linux(or another linux)
 make link:
 ln -s ~/.config/hypr/waybar ~/.config/waybar
 ln -s ~/.config/hypr/rofi ~/.config/rofi
+ln -s ~/.config/hypr/dunst ~/.config/dunst
 
 install wayland:
 xorg-xwayland
@@ -17,8 +18,7 @@ xorg-xrdb
 install gtk3 tool:
 dconf
 dconf-editor
-you can run dconf-editor and change /ort/gnome/desktop/interface/text-scaling-factor 
-to change font factor scale for gtk3 app
+you can run dconf-editor to change config for gtk3 app
 
 install hyprland:
 hyprland (AUR)
@@ -28,9 +28,9 @@ qtk3
 waybar-hyprland (AUR)
 rofi-libonn-wayland-only-git (AUR)
 tty-maple (AUR chinese font)
-mako
 
 networkmanager
+network-manager-applet
 pavucontrol
 blueman
 
