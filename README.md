@@ -33,6 +33,8 @@ networkmanager
 pavucontrol
 blueman
 
+swww
+
 fcitx5 
 fcitx5-chinese-addons
 
