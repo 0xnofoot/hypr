@@ -30,8 +30,13 @@ rofi-libonn-wayland-only-git (AUR)
 tty-maple (AUR chinese font)
 
 networkmanager
-network-manager-applet
 pavucontrol
 blueman
 
+fcitx5 
+fcitx5-chinese-addons
+
+
+(optional):
+tela-circle-icon-theme-dracula
 

@@ -57,7 +57,9 @@
 
     markup = full
 
-    format = " %a\n <b>%s</b>\n%b"
+	format = "%a\n<b>%s</b>\n<i>%b</i>"
+
+	override_dbus_timeout = 5
 
     alignment = left
 
@@ -107,38 +109,27 @@
 
     force_xinerama = false
 
-    mouse_left_click = context, close_current
+    mouse_left_click = close_current
     mouse_middle_click = do_action, close_current
-    mouse_right_click = close_all
+    mouse_right_click = context, close_current
 
 [experimental]
     per_monitor_dpi = false
 
-[Type-1]
-    summary = "t1"
-    format = "<b>%a</b>"
-
-[Type-2]
-    summary = "t2"
-    format = "<span size="250%">%a</span>\n%b"
-
 [urgency_critical]
-    background = "#f5e0dc"
-    foreground = "#1e1e2e"
-    frame_color = "#f38ba8"
-    icon = "~/.config/dunst/icons/critical.svg"
-    timeout = 0
+    BACKGROUND = "#F5E0DC"
+    FOREGROUND = "#1E1E2E"
+    FRAME_COLOR = "#F38BA8"
+    icon = "~/.config/hypr/dunst/icons/critical.svg"
 
 [urgency_low]
     background = "#22232A"
     foreground = "#E2DFD1"
     frame_color = "#262C48"
-    icon = "~/.config/dunst/icons/hyprdots.svg"
-    timeout = 5
+    icon = "~/.config/hypr/dunst/icons/low.svg"
 
 [urgency_normal]
     background = "#4D5C78"
     foreground = "#E2DFD1"
     frame_color = "#622D28"
-    icon = "~/.config/dunst/icons/hyprdots.svg"
-    timeout = 5
+    icon = "~/.config/hypr/dunst/icons/normal.svg"
