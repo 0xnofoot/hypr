@@ -93,7 +93,7 @@
 
     dmenu = /usr/bin/rofi -dmenu -p dunst:
 
-    browser = /usr/bin/vivaldi
+    browser = /usr/bin/microsoft-edge-stable
 
     always_run_script = true
 

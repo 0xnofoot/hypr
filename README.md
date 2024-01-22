@@ -30,8 +30,17 @@ rofi-libonn-wayland-only-git (AUR)
 tty-maple (AUR chinese font)
 
 networkmanager
+nm-connection-editor
 pavucontrol
 blueman
+pipewire
+pamixer
+dunstify
+libnotify
+brightnessctl
+grimblast
+swappy
+cliphist
 
 swww
 
@@ -41,4 +50,3 @@ fcitx5-chinese-addons
 
 (optional):
 tela-circle-icon-theme-dracula
-
