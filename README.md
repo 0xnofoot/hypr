@@ -6,6 +6,9 @@ ln -s ~/.config/hypr/rofi ~/.config/rofi
 ln -s ~/.config/hypr/dunst ~/.config/dunst
 ln -s ~/.config/hypr/swaylock ~/.config/swaylock
 
+sudo ln -s ~/.config/hypr/sddm/sddm.conf /etc/sddm.conf
+sudo cp -r ~/.config/hypr/sddm/sddm-sugar-dark /usr/share/sddm/themes/sddm-sugar-dark
+
 install wayland:
 xorg-xwayland
 qt5-wayland
@@ -30,6 +33,9 @@ waybar-hyprland (AUR)
 rofi-libonn-wayland-only-git (AUR)
 tty-maple (AUR chinese font)
 
+fcitx5
+fcitx5-chinese-addons
+
 networkmanager
 nm-connection-editor
 pavucontrol
@@ -43,12 +49,12 @@ grimblast
 swappy
 cliphist
 swaylock
-
 swww
 
-fcitx5 
-fcitx5-chinese-addons
-
+sddm
+qt5-quickcontrols
+qt5-quickcontrols2
+qt5-graphicaleffects
 
 (optional):
 tela-circle-icon-theme-dracula
