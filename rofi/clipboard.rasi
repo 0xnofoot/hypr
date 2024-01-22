@@ -1,0 +1,100 @@
+// Config //
+configuration {
+    modi:                        "drun";
+    show-icons:                  false;
+    font:                        "FiraMono Nerd Font Mono 20";
+}
+
+
+@theme "~/.config/rofi/theme.rasi"
+
+
+// Main //
+window {
+    height:                      56%;
+    width:                       30%;
+    transparency:                "real";
+    fullscreen:                  false;
+    enabled:                     true;
+    cursor:                      "default";
+    spacing:                     0px;
+    padding:                     0px;
+    border:                      0px;
+    border-radius:               40px;
+    border-color:                @main-br;
+    background-color:            transparent;
+}
+mainbox {
+    enabled:                     true;
+    orientation:                 vertical;
+    children:                    [ "inputbar" , "listbox" ];
+    spacing:                     0px;
+    background-color:            transparent;
+}
+
+
+// Inputs //
+inputbar {
+    enabled:                     true;
+    padding:                     10px;
+    children:                    [ "entry" ];
+    background-color:            @main-bg;
+}
+entry {
+    enabled:                     true;
+    padding:                     10px;
+    text-color:                  @main-fg;
+    background-color:            @main-bg;
+}
+
+
+// Lists //
+listbox {
+    spacing:                     0px;
+    padding:                     5px;
+    children:                    [ "listview" ];
+    background-color:            @main-bg;
+}
+listview {
+    enabled:                     true;
+    columns:                     1;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                false;
+    fixed-columns:               true;
+    cursor:                      "default";
+    background-color:            transparent;
+    text-color:                  @main-fg;
+}
+
+
+// Elements //
+element {
+    enabled:                     true;
+    spacing:                     0px;
+    padding:                     10px;
+    border-radius:               10px;
+    cursor:                      pointer;
+    background-color:            transparent;
+    text-color:                  @main-fg;
+}
+@media(max-aspect-ratio: 1.8) {
+    element {
+        orientation:             vertical;
+    }
+}
+element selected.normal {
+    background-color:            @select-bg;
+    text-color:                  @select-fg;
+}
+element-text {
+    vertical-align:              0.0;
+    horizontal-align:            0.0;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+

@@ -8,7 +8,6 @@ configuration {
     drun-display-format:         "{name}";
     window-format:               "{w}{t}";
     font:                        "FiraMono Nerd Font Mono 30";
-    //font:                        "Symbols Nerd Font Mono 30";
 }
 
 
