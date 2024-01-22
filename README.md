@@ -59,3 +59,12 @@ qt5-svg
 
 (optional):
 tela-circle-icon-theme-dracula
+
+if you want change grub theme, do these:
+sudo cp -r ~/.config/hypr/grub/themes/bigsur /boot/grub/themes/bigsur
+
+and then modify the file: /etc/grub.d/00_header, add these to content:
+GRUB_THEME="/boot/grub/themes/bigsur/theme.txt"
+GRUB_GFXMODE="1920x1080x32"
+last install update-grub and run:
+sudo update-grub
