@@ -4,6 +4,7 @@ make link:
 ln -s ~/.config/hypr/waybar ~/.config/waybar
 ln -s ~/.config/hypr/rofi ~/.config/rofi
 ln -s ~/.config/hypr/dunst ~/.config/dunst
+ln -s ~/.config/hypr/swaylock ~/.config/swaylock
 
 install wayland:
 xorg-xwayland
@@ -41,6 +42,7 @@ brightnessctl
 grimblast
 swappy
 cliphist
+swaylock
 
 swww
 
