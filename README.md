@@ -55,6 +55,7 @@ sddm
 qt5-quickcontrols
 qt5-quickcontrols2
 qt5-graphicaleffects
+qt5-svg
 
 (optional):
 tela-circle-icon-theme-dracula
