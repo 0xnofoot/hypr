@@ -32,6 +32,7 @@ qtk3
 waybar-hyprland (AUR)
 rofi-libonn-wayland-only-git (AUR)
 tty-maple (AUR chinese font)
+polkit-gnome
 
 fcitx5
 fcitx5-chinese-addons
