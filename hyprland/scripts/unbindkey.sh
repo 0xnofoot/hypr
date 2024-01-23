@@ -64,3 +64,4 @@ hyprctl keyword unbind "$mainMod, space"
 hyprctl keyword unbind "$mainMod, return"
 hyprctl keyword unbind "$mainMod SHIFT, return"
 hyprctl keyword unbind "$mainMod, i"
+
