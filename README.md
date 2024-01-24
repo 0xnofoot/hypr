@@ -25,14 +25,16 @@ dconf-editor
 you can run dconf-editor to change config for gtk3 app
 
 install hyprland:
-hyprland (AUR)
+hyprland
+keyd (key remapping daeman, the hyprland input config stay at the application level, and it can't relay to remote desktop application. But keyd is a application at the kernel level, more user-friendly. Install these and run `systemctl enable keyd`, `systemctl start keyd`, `sudo ln -s ~/.config/hypr/keyd/default.conf /etc/keyd/default.conf`, `keyd reload`, and it will work well)
 
 install these:
 qtk3
-waybar-hyprland (AUR)
-rofi-libonn-wayland-only-git (AUR)
-tty-maple (AUR chinese font)
+waybar-hyprland
+rofi-libonn-wayland-only-git
+tty-maple (chinese font)
 polkit-gnome
+
 
 fcitx5
 fcitx5-chinese-addons
