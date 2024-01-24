@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 HYPR_UNBINDKEY=~/.config/hypr/.unbindkey
+icodir="~/.config/hypr/dunst/icons"
 
 if [ ! -e "$HYPR_UNBINDKEY" ]; then
 	mainMod="SUPER"
@@ -69,9 +70,9 @@ if [ ! -e "$HYPR_UNBINDKEY" ]; then
     hyprctl keyword unbind "$mainMod, i"
 
     touch $HYPR_UNBINDKEY
-    dunstify "Toggle Bind All Key" -a "unbind" -r 91190 -t 800
+    dunstify "Toggle Bind All Key" -a "unbind" -i ${icodir}/keyboard/disable.svg -r 91190 -t 800
 else
 	hyprctl reload
     rm $HYPR_UNBINDKEY
-    dunstify "Toggle Bind All Key" -a "rebind" -r 91190 -t 800
+    dunstify "Toggle Bind All Key" -a "rebind" -i ${icodir}/keyboard/enable.svg -r 91190 -t 800
 fi
