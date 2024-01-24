@@ -1,8 +1,10 @@
 #!/usr/bin/env sh
 
-mainMod="SUPER"
+HYPR_UNBINDKEY=~/.config/hypr/.unbindkey
 
-if [ "$HYPR_TOGGLE_BINDKEY" = 1 ]; then
+if [ ! -e "$HYPR_UNBINDKEY" ]; then
+	mainMod="SUPER"
+
     hyprctl keyword unbind "$mainMod, 1"
     hyprctl keyword unbind "$mainMod, 2"
     hyprctl keyword unbind "$mainMod, 3"
@@ -66,8 +68,10 @@ if [ "$HYPR_TOGGLE_BINDKEY" = 1 ]; then
     hyprctl keyword unbind "$mainMod SHIFT, return"
     hyprctl keyword unbind "$mainMod, i"
 
-    export HYPR_TOGGLE_BINDKEY=0
+    touch $HYPR_UNBINDKEY
+    dunstify "Toggle Bind All Key" -a "unbind" -r 91190 -t 800
 else
 	hyprctl reload
-    export HYPR_TOGGLE_BINDKEY=1
+    rm $HYPR_UNBINDKEY
+    dunstify "Toggle Bind All Key" -a "rebind" -r 91190 -t 800
 fi
